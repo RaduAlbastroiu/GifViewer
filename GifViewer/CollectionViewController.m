@@ -10,7 +10,7 @@
 #import "CollectionViewCell.h"
 
 @interface CollectionViewController ()
-
+@property (strong, nonatomic) NSArray* imageURLs;
 @end
 
 @implementation CollectionViewController
@@ -22,12 +22,26 @@ static NSString * const reuseIdentifier = @"GifViewerCell";
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+    [self refreshImages];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) refreshImages {
+    NSURLSession* session = [NSURLSession sharedSession];
+    NSURL* url = [NSURL URLWithString:@"https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&rating=pg&limit=100"];
+    NSURLSessionDownloadTask* task = [session downloadTaskWithURL: url completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        NSData* data = [[NSData alloc] initWithContentsOfURL:location];
+        NSDictionary* dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        
+        self.imageURLs = [dictionary valueForKeyPath:@"data.images.downsized_still.url"];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
+    }];
+    
+    [task resume];
+    
 }
 
 /*
@@ -48,14 +62,15 @@ static NSString * const reuseIdentifier = @"GifViewerCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 49;
+    return self.imageURLs.count;
 }
 
 - (CollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    cell.imageView.image = [UIImage imageNamed:@"launch"];
+    NSString *urlString = [self.imageURLs objectAtIndex:indexPath.row];
+    cell.urlString = urlString;
     
     return cell;
 }

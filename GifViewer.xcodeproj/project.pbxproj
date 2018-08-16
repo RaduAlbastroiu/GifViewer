@@ -14,7 +14,7 @@
 		DA26FB06212577CE00E37B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB05212577CE00E37B72 /* main.m */; };
 		DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB0D2125793C00E37B72 /* CollectionViewController.m */; };
 		DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */; };
-		DA26FB1321257FF600E37B72 /* CollectionViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */; };
+		DA26FB182125D43600E37B72 /* Giphy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB172125D43600E37B72 /* Giphy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,8 @@
 		DA26FB0D2125793C00E37B72 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		DA26FB0F21257E5E00E37B72 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController2.swift; sourceTree = "<group>"; };
+		DA26FB162125D43600E37B72 /* Giphy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Giphy.h; sourceTree = "<group>"; };
+		DA26FB172125D43600E37B72 /* Giphy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Giphy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,8 @@
 				DA26FAF7212577CD00E37B72 /* AppDelegate.m */,
 				DA26FB0C2125793C00E37B72 /* CollectionViewController.h */,
 				DA26FB0D2125793C00E37B72 /* CollectionViewController.m */,
-				DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */,
+				DA26FB162125D43600E37B72 /* Giphy.h */,
+				DA26FB172125D43600E37B72 /* Giphy.m */,
 				DA26FB0F21257E5E00E37B72 /* CollectionViewCell.h */,
 				DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */,
 				DA26FAFC212577CD00E37B72 /* Main.storyboard */,
@@ -152,7 +154,7 @@
 			files = (
 				DA26FB06212577CE00E37B72 /* main.m in Sources */,
 				DA26FAF8212577CD00E37B72 /* AppDelegate.m in Sources */,
-				DA26FB1321257FF600E37B72 /* CollectionViewController2.swift in Sources */,
+				DA26FB182125D43600E37B72 /* Giphy.m in Sources */,
 				DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */,
 				DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */,
 			);
