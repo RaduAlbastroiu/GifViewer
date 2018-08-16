@@ -15,6 +15,7 @@
 		DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB0D2125793C00E37B72 /* CollectionViewController.m */; };
 		DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */; };
 		DA26FB182125D43600E37B72 /* Giphy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB172125D43600E37B72 /* Giphy.m */; };
+		DA26FB1B2125DBBC00E37B72 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1A2125DBBC00E37B72 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		DA26FB162125D43600E37B72 /* Giphy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Giphy.h; sourceTree = "<group>"; };
 		DA26FB172125D43600E37B72 /* Giphy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Giphy.m; sourceTree = "<group>"; };
+		DA26FB192125DBBC00E37B72 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DA26FB1A2125DBBC00E37B72 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +69,14 @@
 			children = (
 				DA26FAF6212577CD00E37B72 /* AppDelegate.h */,
 				DA26FAF7212577CD00E37B72 /* AppDelegate.m */,
+				DA26FB192125DBBC00E37B72 /* DetailViewController.h */,
+				DA26FB1A2125DBBC00E37B72 /* DetailViewController.m */,
 				DA26FB0C2125793C00E37B72 /* CollectionViewController.h */,
 				DA26FB0D2125793C00E37B72 /* CollectionViewController.m */,
-				DA26FB162125D43600E37B72 /* Giphy.h */,
-				DA26FB172125D43600E37B72 /* Giphy.m */,
 				DA26FB0F21257E5E00E37B72 /* CollectionViewCell.h */,
 				DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */,
+				DA26FB162125D43600E37B72 /* Giphy.h */,
+				DA26FB172125D43600E37B72 /* Giphy.m */,
 				DA26FAFC212577CD00E37B72 /* Main.storyboard */,
 				DA26FAFF212577CE00E37B72 /* Assets.xcassets */,
 				DA26FB01212577CE00E37B72 /* LaunchScreen.storyboard */,
@@ -157,6 +162,7 @@
 				DA26FB182125D43600E37B72 /* Giphy.m in Sources */,
 				DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */,
 				DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */,
+				DA26FB1B2125DBBC00E37B72 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
