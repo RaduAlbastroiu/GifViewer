@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DA26FAF8212577CD00E37B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FAF7212577CD00E37B72 /* AppDelegate.m */; };
-		DA26FAFB212577CD00E37B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FAFA212577CD00E37B72 /* ViewController.m */; };
 		DA26FAFE212577CD00E37B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26FAFC212577CD00E37B72 /* Main.storyboard */; };
 		DA26FB00212577CE00E37B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA26FAFF212577CE00E37B72 /* Assets.xcassets */; };
 		DA26FB03212577CE00E37B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26FB01212577CE00E37B72 /* LaunchScreen.storyboard */; };
 		DA26FB06212577CE00E37B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB05212577CE00E37B72 /* main.m */; };
+		DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB0D2125793C00E37B72 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA26FAF3212577CD00E37B72 /* GifViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA26FAF6212577CD00E37B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA26FAF7212577CD00E37B72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA26FAF9212577CD00E37B72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DA26FAFA212577CD00E37B72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA26FAFD212577CD00E37B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA26FAFF212577CE00E37B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA26FB02212577CE00E37B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA26FB04212577CE00E37B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA26FB05212577CE00E37B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA26FB0C2125793C00E37B72 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		DA26FB0D2125793C00E37B72 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				DA26FAF6212577CD00E37B72 /* AppDelegate.h */,
 				DA26FAF7212577CD00E37B72 /* AppDelegate.m */,
-				DA26FAF9212577CD00E37B72 /* ViewController.h */,
-				DA26FAFA212577CD00E37B72 /* ViewController.m */,
+				DA26FB0C2125793C00E37B72 /* CollectionViewController.h */,
+				DA26FB0D2125793C00E37B72 /* CollectionViewController.m */,
 				DA26FAFC212577CD00E37B72 /* Main.storyboard */,
 				DA26FAFF212577CE00E37B72 /* Assets.xcassets */,
 				DA26FB01212577CE00E37B72 /* LaunchScreen.storyboard */,
@@ -141,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA26FAFB212577CD00E37B72 /* ViewController.m in Sources */,
 				DA26FB06212577CE00E37B72 /* main.m in Sources */,
 				DA26FAF8212577CD00E37B72 /* AppDelegate.m in Sources */,
+				DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
