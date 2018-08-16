@@ -13,6 +13,8 @@
 		DA26FB03212577CE00E37B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA26FB01212577CE00E37B72 /* LaunchScreen.storyboard */; };
 		DA26FB06212577CE00E37B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB05212577CE00E37B72 /* main.m */; };
 		DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB0D2125793C00E37B72 /* CollectionViewController.m */; };
+		DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */; };
+		DA26FB1321257FF600E37B72 /* CollectionViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		DA26FB05212577CE00E37B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA26FB0C2125793C00E37B72 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		DA26FB0D2125793C00E37B72 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		DA26FB0F21257E5E00E37B72 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				DA26FAF7212577CD00E37B72 /* AppDelegate.m */,
 				DA26FB0C2125793C00E37B72 /* CollectionViewController.h */,
 				DA26FB0D2125793C00E37B72 /* CollectionViewController.m */,
+				DA26FB1221257FF600E37B72 /* CollectionViewController2.swift */,
+				DA26FB0F21257E5E00E37B72 /* CollectionViewCell.h */,
+				DA26FB1021257E5E00E37B72 /* CollectionViewCell.m */,
 				DA26FAFC212577CD00E37B72 /* Main.storyboard */,
 				DA26FAFF212577CE00E37B72 /* Assets.xcassets */,
 				DA26FB01212577CE00E37B72 /* LaunchScreen.storyboard */,
@@ -102,6 +110,7 @@
 				TargetAttributes = {
 					DA26FAF2212577CD00E37B72 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -143,6 +152,8 @@
 			files = (
 				DA26FB06212577CE00E37B72 /* main.m in Sources */,
 				DA26FAF8212577CD00E37B72 /* AppDelegate.m in Sources */,
+				DA26FB1321257FF600E37B72 /* CollectionViewController2.swift in Sources */,
+				DA26FB1121257E5E00E37B72 /* CollectionViewCell.m in Sources */,
 				DA26FB0E2125793C00E37B72 /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3AWL2X8CT;
 				INFOPLIST_FILE = GifViewer/Info.plist;
@@ -292,6 +304,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RaduAlbastroiu.GifViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3AWL2X8CT;
 				INFOPLIST_FILE = GifViewer/Info.plist;
@@ -309,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RaduAlbastroiu.GifViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
