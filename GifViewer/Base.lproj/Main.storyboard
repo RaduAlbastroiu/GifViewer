@@ -46,7 +46,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="YeD-5k-1ZD" id="6s3-54-Lye"/>
-                                    <segue destination="jaB-sr-2Ch" kind="showDetail" identifier="showDetail" id="aPd-Lx-ywK"/>
+                                    <segue destination="jaB-sr-2Ch" kind="presentation" identifier="showDetail" modalPresentationStyle="overCurrentContext" id="aPd-Lx-ywK"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -68,20 +68,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-QX-qCq">
-                                <rect key="frame" x="10" y="133" width="355" height="400"/>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sW-QX-qCq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="Cag-QE-NaS"/>
-                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9sW-QX-qCq" firstAttribute="centerY" secondItem="9Bk-1M-fLo" secondAttribute="centerY" id="5UY-Tm-xAz"/>
-                            <constraint firstItem="9sW-QX-qCq" firstAttribute="centerX" secondItem="9Bk-1M-fLo" secondAttribute="centerX" id="dHD-OP-xBT"/>
-                            <constraint firstItem="qdc-fT-o3g" firstAttribute="trailing" secondItem="9sW-QX-qCq" secondAttribute="trailing" constant="10" id="xfc-KO-Pub"/>
-                            <constraint firstItem="9sW-QX-qCq" firstAttribute="leading" secondItem="qdc-fT-o3g" secondAttribute="leading" constant="10" id="zUk-Np-bEH"/>
+                            <constraint firstItem="9sW-QX-qCq" firstAttribute="top" secondItem="qdc-fT-o3g" secondAttribute="top" id="3pw-wl-Ofc"/>
+                            <constraint firstItem="qdc-fT-o3g" firstAttribute="bottom" secondItem="9sW-QX-qCq" secondAttribute="bottom" id="S31-gj-zI4"/>
+                            <constraint firstItem="qdc-fT-o3g" firstAttribute="trailing" secondItem="9sW-QX-qCq" secondAttribute="trailing" id="xfc-KO-Pub"/>
+                            <constraint firstItem="9sW-QX-qCq" firstAttribute="leading" secondItem="qdc-fT-o3g" secondAttribute="leading" id="zUk-Np-bEH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qdc-fT-o3g"/>
                     </view>

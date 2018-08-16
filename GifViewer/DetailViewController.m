@@ -22,6 +22,39 @@
         NSURLRequest* request = [NSURLRequest requestWithURL:self.giphy.animatedGifUrl];
         [self.webView loadRequest:request];
     }
+    
+    [self setupGesture];
+}
+
+- (void)setupGesture {
+    UITapGestureRecognizer* dismiss = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissView)];
+    
+    dismiss.numberOfTapsRequired = 2;
+    [self.view addGestureRecognizer:dismiss];
+    
+    UISwipeGestureRecognizer* swipeDismiss = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissSwipeView)];
+    swipeDismiss.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [self.view addGestureRecognizer:swipeDismiss];
+}
+
+- (void)dismissView {
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.view.transform = CGAffineTransformMakeScale(0.01, 0.01);
+        self.view.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self dismissViewControllerAnimated:TRUE completion:nil];
+    }];
+}
+
+- (void)dismissSwipeView {
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(400, 0);
+    } completion:^(BOOL finished) {
+        [self dismissViewControllerAnimated:TRUE completion:nil];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
